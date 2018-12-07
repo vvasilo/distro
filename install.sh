@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# No half operations
+export TORCH_NVCC_FLAGS="-D__CUDA_NO_HALF_OPERATORS__"
+
 SKIP_RC=0
 BATCH_INSTALL=0
 

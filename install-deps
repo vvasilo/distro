@@ -175,8 +175,12 @@ elif [[ "$(uname)" == 'Linux' ]]; then
             echo "Some portion of the update is failed"
         fi
         # python-software-properties is required for apt-add-repository
-        sudo apt-get install -y python-software-properties
         echo "==> Found Ubuntu version ${ubuntu_major_version}.xx"
+	if [[ $ubuntu_major_version -lt '18' ]]; then
+            sudo apt-get install -y python-software-properties
+	else
+	    sudo apt-get install -y software-properties-common
+	fi
         if [[ $ubuntu_major_version -lt '12' ]]; then
             echo '==> Ubuntu version not supported.'
             exit 1

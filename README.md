@@ -1,3 +1,11 @@
+## Related Repository
+
+- https://github.com/nagadomi/cutorch
+- https://github.com/nagadomi/cunn
+- https://github.com/nagadomi/cudnn.torch
+
+## Original README.md
+
 [![Build Status](https://travis-ci.org/torch/distro.svg?branch=master)](https://travis-ci.org/torch/distro)
 
 #### NOTE: Torch is not actively developed anymore and is in maintenance mode.

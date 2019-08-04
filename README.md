@@ -21,13 +21,13 @@ Self-contained Torch installation
 #### Dependencies
 Globally installed dependencies can be installed via:
 ```bash
-bash install-deps
+sudo bash install-deps
 ```
 
 #### Lua and Torch
 The self-contained Lua and Torch installations are performed via:
 ```bash
-./install.sh
+sudo ./install.sh
 ```
 
 By default Torch will install LuaJIT 2.1. If you want other options, you can use the command:
@@ -40,19 +40,19 @@ TORCH_LUA_VERSION=LUA52 ./install.sh
 ## Update
 To update your already installed distro to the latest `master` branch of `torch/distro` simply run:
 ```bash
-./update.sh
+sudo ./update.sh
 ```
 
 ## Cleaning
 To remove all the temporary compilation files you can run:
 ```bash
-./clean.sh
+sudo ./clean.sh
 ```
 
 To remove the installation run:
 ```bash
 # Warning: this will remove your current installation
-rm -rf ./install
+sudo rm -rf ./install
 ```
 You may also want to remove the `torch-activate` entry from your shell start-up script (`~/.bashrc` or `~/.profile`).
 

@@ -37,6 +37,12 @@ TORCH_LUA_VERSION=LUA51 ./install.sh
 TORCH_LUA_VERSION=LUA52 ./install.sh
 ```
 
+Finally make sure to properly setup access rights:
+```bash
+sudo chown -R install
+sudo chown -R build
+```
+
 ## Update
 To update your already installed distro to the latest `master` branch of `torch/distro` simply run:
 ```bash
